@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:id="@+id/Picture"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/show14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我关心的城市"
+        android:id="@+id/row1col1"
+        android:layout_below="@+id/Picture"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/row1col2"
+        android:background="#ff1992ff"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我所在的城市"
+        android:id="@+id/row1col2"
+        android:layout_below="@+id/Picture"
+        android:layout_alignParentEnd="true"
+        android:background="#ff54f0ff"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="气候指导"
+        android:id="@+id/row2col1"
+        android:layout_below="@+id/row1col1"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/row2col2"
+        android:textColor="#fffbffff"
+        android:background="#ff90ff12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出行推荐"
+        android:id="@+id/row2col2"
+        android:layout_alignTop="@+id/row2col1"
+        android:layout_toStartOf="@+id/row2col3"
+        android:background="#ffffda02"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="季节信息"
+        android:id="@+id/row2col3"
+        android:layout_alignBottom="@+id/row2col2"
+        android:layout_alignParentEnd="true"
+        android:background="#ffff0c00"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系我们"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/row2col1"
+        android:layout_toEndOf="@+id/row2col1"
+        android:id="@+id/row3col2"
+
+        android:background="#ff005fff"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:id="@+id/row3col1"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/row2col2"
+        android:layout_below="@+id/row2col1"
+        android:background="#ffce9c49"
+        android:textColor="#ffffffff"
+
+        />
+</RelativeLayout>

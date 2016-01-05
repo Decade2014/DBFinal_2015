@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yesterday"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.21"
+        android:textColor="#ffff0bb7" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Today"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.23"
+        android:textColor="#ffff0bb7" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/Tomorrow"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.21"
+        android:textColor="#ffff0bb7" />
+</LinearLayout>

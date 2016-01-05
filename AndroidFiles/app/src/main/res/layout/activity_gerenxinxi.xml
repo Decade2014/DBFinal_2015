@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Edit File"
+        android:gravity="center"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffff03ce" />
+
+    <TextView
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="省份："
+        android:id="@+id/textView5"
+        android:layout_weight="0.04"
+        android:textColor="#ffff9202"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/textView7"
+        android:layout_toStartOf="@+id/deleteFile"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="我关心的城市："
+        android:textColor="#ffff9202"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/editText2"
+        android:layout_alignStart="@+id/textView8"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="保存信息"
+        android:id="@+id/saveFile"
+        android:background="@drawable/shape2"
+        android:textColor="#ff00faff"
+        android:layout_marginBottom="313dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginEnd="46dp"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="读取信息"
+        android:id="@+id/readFile"
+        android:background="@drawable/shape2"
+        android:textColor="#ff00faff"
+        android:layout_marginStart="47dp"
+        android:layout_alignTop="@+id/deleteFile"
+        android:layout_toEndOf="@+id/deleteFile" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="删除信息"
+        android:id="@+id/deleteFile"
+        android:background="@drawable/shape2"
+        android:textColor="#ff00faff"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我所在的城市："
+        android:textColor="#ffff9202"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/editText"
+        android:layout_alignStart="@+id/textView5"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:background="#ffffffff"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_marginBottom="105dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_above="@+id/editText2"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="喜欢的天气类型："
+        android:textColor="#ffff9202"
+        android:id="@+id/textView8"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_toEndOf="@+id/textView8"
+        android:background="#ffffffff"
+        android:layout_above="@+id/saveFile"
+        android:visibility="invisible" />
+
+    <AutoCompleteTextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/fileName"
+        android:layout_alignBottom="@+id/textView5"
+        android:background="@drawable/shape3"
+        android:layout_alignStart="@+id/fileText"
+        android:layout_alignEnd="@+id/readFile" />
+
+    <AutoCompleteTextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/fileText"
+        android:layout_above="@+id/editText"
+        android:background="@drawable/shape3"
+        android:layout_alignEnd="@+id/readFile"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_alignStart="@+id/editText" />
+
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/careCity"
+        android:layout_above="@+id/editText2"
+        android:background="@drawable/shape3"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignEnd="@+id/love" />
+
+    <AutoCompleteTextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/love"
+        android:background="@drawable/shape3"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignEnd="@+id/fileText"
+        android:layout_toEndOf="@+id/editText" />
+</RelativeLayout>
